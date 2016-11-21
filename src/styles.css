@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+.logo{
+    float: right;
+    width: 40px;
+    height: 0px;
+    
+}
+.item{
+    padding-top: 20px;
+  
+}
+.ui.inverted.fixed.menu{
+    
+}
+.ui.secondary.tabular.menu{
+    
+    margin-top: 0px;
+}
+.brand.item{
+    float: left;
+}

@@ -1,0 +1,27 @@
+<div class="ui inverted fixed menu">
+  <div class="ui secondary tabular menu ">
+    <a class="item" routerLink="/home" routerLinkActive="active">
+      <img src="resources/static/pic/logo1.png" />
+    </a>
+    <a class="item" routerLink="/home" routerLinkActive="active">
+      <h2>PixelProject</h2>
+    </a>
+    <a class="item" routerLink="/home" routerLinkActive="active">
+      Home
+    </a>
+    <a class="item" routerLink="/my-album" routerLinkActive="active">
+      My Album
+    </a>
+  </div>
+  <div class="right menu ">
+    <a *ngIf="!loginService.checkLogin()" class="item" routerLink="/register" routerLinkActive="active" >
+      Register
+    </a>
+    <a *ngIf="loginService.checkLogin()" class="item">
+      {{loginService.getUsername()}}
+    </a>
+    <a class="item" routerLink="/login" routerLinkActive="active" (click)="onClick()">
+      {{loginService.checkLogin()? 'Logout' : 'Login'}}
+    </a>
+  </div>
+</div>
